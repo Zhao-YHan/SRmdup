@@ -35,7 +35,7 @@ cd SRmdup
 conda create -n srmdup python=3.10 -y
 conda activate srmdup
 conda install -c conda-forge -c bioconda pysam samtools r-base r-data.table r-ggplot2 r-scales r-patchwork
-
+```
 ## Scripts
 - `SRmdup.py`: main script for read-level duplicate filtering.
 - `SRmdup_pipeline.sh`: wrapper script for running the full workflow.
@@ -46,10 +46,12 @@ conda install -c conda-forge -c bioconda pysam samtools r-base r-data.table r-gg
 Run the full pipeline:
 ```bash
 bash scripts/SRmdup_pipeline.sh input.before.bam SAMPLE output_dir 4
+```
 Run duplicate filtering only:
 ```bash
 python3 scripts/SRmdup.py --bam input.before.bam --out-bam output.after.bam --stats-tsv stats.tsv
 More example commands are available in examples/example_commands.txt.
+```
 
 ## Input and output
 ### Input
@@ -73,7 +75,7 @@ python3 scripts/SRmdup.py \
   --stats-tsv examples/stats.tsv \
   --del-prefix examples/deleted_reads \
   --keep-tsv examples/kept_reads.tsv
-
+```
 ### 2. Duplicate filtering with custom temporary directory and threads
 ```bash
 python3 scripts/SRmdup.py \
@@ -84,7 +86,7 @@ python3 scripts/SRmdup.py \
   --read-threads 4 \
   --write-threads 4 \
   --progress-every 50000
-
+```
 ### 3. Allow filtering on an unsorted BAM file
 ```bash
 python3 scripts/SRmdup.py \
@@ -92,3 +94,4 @@ python3 scripts/SRmdup.py \
   --out-bam examples/example.after.unsorted.bam \
   --stats-tsv examples/stats.unsorted.tsv \
   --accept-unsorted
+```
