@@ -16,8 +16,10 @@ SRmdup requires the following environment:
 - R 4.2+
 - samtools
 - bash
+
 Python package:
 - `pysam`
+  
 R packages:
 - `data.table`
 - `ggplot2`
