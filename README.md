@@ -51,8 +51,9 @@ bash scripts/SRmdup_pipeline.sh input.before.bam SAMPLE output_dir 4
 Run duplicate filtering only:
 ```bash
 python3 scripts/SRmdup.py --bam input.before.bam --out-bam output.after.bam --stats-tsv stats.tsv
-More example commands are available in examples/example_commands.txt.
 ```
+More example commands are available in example.
+
 
 ## Input and output
 ### Input
