@@ -1,5 +1,4 @@
 # SRmdup
-# SRmdup
 ## Overview
 SRmdup is a read-level duplicate filtering method for Single-end low-coverage ancient human DNA.
 
@@ -29,7 +28,7 @@ R packages:
 
 Clone the repository and create a conda environment:
 ```bash
-mkdir SRmup
+mkdir SRmdup
 git clone <your-repo-url>
 cd SRmdup
 conda create -n srmdup python=3.10 -y
