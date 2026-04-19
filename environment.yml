@@ -4,12 +4,10 @@ channels:
    bioconda
 dependencies:
    python=3.10
+   pysam>=0.22
    samtools
    r-base=4.2
    r-data.table
    r-ggplot2
    r-scales
    r-patchwork
-   pip
-   pip:
-       pysam>=0.22
