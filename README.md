@@ -67,24 +67,24 @@ More example commands are available in example.
 ### Optional outputs from SRmdup.py
 - deleted-read tables 
 - kept-read table 
-## Example
+## Examples
 Additional example commands for SRmdup
 ### 1. Duplicate filtering with optional deleted-read and kept-read tables
 ```bash
 python3 scripts/SRmdup.py \
   --bam examples/example.bam \
-  --out-bam examples/example.after.bam \
-  --stats-tsv examples/stats.tsv \
-  --del-prefix examples/deleted_reads \
-  --keep-tsv examples/kept_reads.tsv
+  --out-bam example.after.bam \
+  --stats-tsv stats.tsv \
+  --del-prefix deleted_reads \
+  --keep-tsv kept_reads.tsv
 ```
 ### 2. Duplicate filtering with custom temporary directory and threads
 ```bash
 python3 scripts/SRmdup.py \
   --bam examples/example.bam \
-  --out-bam examples/example.after.bam \
-  --stats-tsv examples/stats.tsv \
-  --tmp-dir examples/tmp \
+  --out-bam example.after.bam \
+  --stats-tsv stats.tsv \
+  --tmp-dir tmp \
   --read-threads 4 \
   --write-threads 4 \
   --progress-every 50000
@@ -93,7 +93,7 @@ python3 scripts/SRmdup.py \
 ```bash
 python3 scripts/SRmdup.py \
   --bam examples/example.bam \
-  --out-bam examples/example.after.unsorted.bam \
-  --stats-tsv examples/stats.unsorted.tsv \
+  --out-bam example.after.unsorted.bam \
+  --stats-tsv stats.unsorted.tsv \
   --accept-unsorted
 ```
