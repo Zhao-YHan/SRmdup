@@ -12,7 +12,7 @@ The current implementation removes duplicates in four categories: same start and
 
 ## Environment
 SRmdup requires the following environment:
-- Python 3.9+
+- Python 3.10+
 - R 4.2+
 - samtools
 - bash
@@ -31,7 +31,7 @@ R packages:
 Clone the repository and create a conda environment:
 ```bash
 mkdir SRmdup
-git clone <your-repo-url>
+git clone https://github.com/Zhao-YHan/SRmdup
 cd SRmdup
 conda create -n srmdup python=3.10 -y
 conda activate srmdup
