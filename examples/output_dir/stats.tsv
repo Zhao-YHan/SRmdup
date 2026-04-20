@@ -1,0 +1,4 @@
+scope	total_input	total_deleted	total_kept	kept_rate%	both_equal	start_equal	end_equal	both_±1
+FORWARD	63077	8830	54247	86.001	7	4580	4203	40
+REVERSE	63235	9030	54205	85.720	13	3399	5566	52
+ALL	126312	17860	108452	85.860	20	7979	9769	92
