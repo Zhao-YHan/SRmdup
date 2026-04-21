@@ -31,7 +31,6 @@ R packages:
 Clone the repository and create a conda environment:
 ```bash
 mkdir SRmdup
-git clone https://github.com/Zhao-YHan/SRmdup
 cd SRmdup
 conda create -n srmdup python=3.10 -y
 conda activate srmdup
