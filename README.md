@@ -1,6 +1,6 @@
 # SRmdup
 ## Overview
-SRmdup is a read-level duplicate filtering method for Single-strand low-coverage ancient human DNA.
+SRmdup (Symmetric removal of duplicate reads) is a read-level duplicate filtering method for Single-strand low-coverage ancient human DNA.
 
 This repository contains scripts for:
 1. read-level duplicate filtering of BAM files,
